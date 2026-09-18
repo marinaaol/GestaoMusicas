@@ -1,7 +1,4 @@
-﻿using System.Diagnostics.CodeAnalysis;
-using System.Security.Cryptography.X509Certificates;
-
-namespace GestaoMusicas
+﻿namespace GestaoMusicas
 {
     internal class Program
     {
@@ -42,10 +39,6 @@ namespace GestaoMusicas
 
             double media = m2.CalcularMedia();
             Console.WriteLine($"Média da música {m2.titulo}: {media:F2}");
-
-            m1.ObterDuracaoFormatada();
-            m2.ObterDuracaoFormatada();
-            m3.ObterDuracaoFormatada();
 
             List<Musica> playlist = new List<Musica>();
             playlist.Add(m1);

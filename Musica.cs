@@ -1,5 +1,3 @@
-using System.Security.Cryptography.X509Certificates;
-
 namespace GestaoMusicas
 {
     internal class Musica
@@ -11,7 +9,7 @@ namespace GestaoMusicas
             public int ano;
 
         // Lista de classificações
-            public List<int> classificacoes = new List<int>();
+            public List<int> classificacoes;
 
         //Array de string dos gêneros musicais    
             public string[] generos;
@@ -72,7 +70,7 @@ namespace GestaoMusicas
             {
                 if (classificacoes.Count == 0)
                 {
-                    Console.WriteLine("A lsita Classificações está vazia");
+                    Console.WriteLine("A lista Classificações está vazia");
                     return; //sai do método para não continuar
                 }
                 //Caso a lista não esteja vazia, percorre com foreach e imprime cada nota 
