@@ -29,6 +29,14 @@ namespace GestaoMusicas
             m2.AdicionarClassificacao(0);
             m2.AdicionarClassificacao(12);
 
+            Console.WriteLine("Total de avaliações: " + m2.classificacoes.Count);
+
+            m2.MostrarClassificacoes();
+            m1.MostrarClassificacoes();
+
+            double media = m2.CalcularMedia();
+            Console.WriteLine($"Média da música {m2.titulo}: {media:F2}");
+
             m1.ObterDuracaoFormatada();
             m2.ObterDuracaoFormatada();
             m3.ObterDuracaoFormatada();
