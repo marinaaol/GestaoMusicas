@@ -46,6 +46,24 @@ namespace GestaoMusicas
             m1.ObterDuracaoFormatada();
             m2.ObterDuracaoFormatada();
             m3.ObterDuracaoFormatada();
+
+            List<Musica> playlist = new List<Musica>();
+            playlist.Add(m1);
+            playlist.Add(m2);
+            playlist.Add(m3);
+
+            Console.WriteLine("======== PLAYLIST =======");
+            int duracaoTotal = 0;
+
+            foreach(Musica m in playlist)
+            {
+                Console.WriteLine(m);
+                duracaoTotal = duracaoTotal + m.duracaoSegundos;
+            }
+            int minutosTotal = duracaoTotal / 60;
+            int segundosTotal = duracaoTotal % 60;
+            Console.WriteLine($"Músicas:   {playlist.Count}");
+            Console.WriteLine($"Duração total:  {minutosTotal}m {segundosTotal}s");
         }
     }
 }
