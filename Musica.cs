@@ -58,9 +58,6 @@ namespace GestaoMusicas
             return $"{minutos}m {segundos}s";
         }
 
-        //------- LISTAS ----------
-        public List<int> classificacoes = new List<int>();
-
         public void AdicionarClassificacao(int nota)
             {
                 if (nota < 1 || nota > 5)
