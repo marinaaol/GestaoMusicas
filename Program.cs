@@ -34,6 +34,12 @@ namespace GestaoMusicas
             m2.MostrarClassificacoes();
             m1.MostrarClassificacoes();
 
+            m2.generos[0] = "MPB";
+            m2.generos[1] = "Soul";
+          
+            m2.MostrarGeneros();
+            m1.MostrarGeneros();
+
             double media = m2.CalcularMedia();
             Console.WriteLine($"Média da música {m2.titulo}: {media:F2}");
 
