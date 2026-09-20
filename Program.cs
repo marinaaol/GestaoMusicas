@@ -26,6 +26,7 @@
             m2.AdicionarClassificacao(0);
             m2.AdicionarClassificacao(12);
 
+            Console.WriteLine("///////////////////////");
             Console.WriteLine("Total de avaliações: " + m2.classificacoes.Count);
 
             m2.MostrarClassificacoes();
@@ -38,6 +39,7 @@
             m1.MostrarGeneros();
 
             double media = m2.CalcularMedia();
+            Console.WriteLine("///////////////////////");
             Console.WriteLine($"Média da música {m2.titulo}: {media:F2}");
 
             List<Musica> playlist = new List<Musica>();
@@ -57,6 +59,7 @@
             int segundosTotal = duracaoTotal % 60;
             Console.WriteLine($"Músicas:   {playlist.Count}");
             Console.WriteLine($"Duração total:  {minutosTotal}m {segundosTotal}s");
+            Console.WriteLine("///////////////////////");
         }
     }
 }

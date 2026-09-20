@@ -3,8 +3,8 @@ namespace GestaoMusicas
     internal class Musica
     {
         //------ CAMPOS ------
-            public string titulo;
-            public string artista;
+            public string titulo = "";
+            public string artista = "";
             public int duracaoSegundos;
             public int ano;
 
@@ -42,7 +42,7 @@ namespace GestaoMusicas
         
         public void MostrarFicha()
         {
-            Console.WriteLine("--------------");
+            Console.WriteLine("//////////////////////");
             Console.WriteLine("Música     : " + titulo);
             Console.WriteLine("Artista    : " + artista);
             Console.WriteLine("Duração    : " + duracaoSegundos);
